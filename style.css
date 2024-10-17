@@ -66,7 +66,7 @@ h2 {
 .caja {
     background-color: rgb(163, 206, 204); 
     border-radius: 10px;
-  
+    justify-content: center;
     padding: 50px; 
     width: 80%;
     max-width: 500px; 
@@ -188,8 +188,13 @@ h2 {
     padding: 20px; 
     width: 70%; 
     max-width: 800px; 
+    
    
 }
+
+
+
+
 
 label {
     font-size: 25px;
@@ -411,8 +416,43 @@ footer {
     background-color: #ef1f53; 
 }
 
+/* Perfil */
 
 
+.profilecolum {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.texto-inicio {
+    padding: 80px;
+    font-size: 70px; 
+}
+
+
+.boton-start {
+    display: block;
+    padding: 15px 30px;
+    font-size: 90px; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 auto; 
+}
+button#noReg {
+    align-content: center;
+    display: block;
+    padding: 2%;
+    font-size: 19px; 
+    border-radius: 5px;
+    cursor: pointer;
+    
+
+
+}
 
 
 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Music Quiz</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="titulo">MusicQuiz</h1>
+    </header>
+    <main>
+        <div class="imagenTexto">
+            <img src="../media/logo.png" alt="Imagen de resultado" class="imagen1">
+            <h2>¿Listo para poner a prueba tus conocimientos musicales?</h2>
+            
+        </div>
+        
+    
+        <section class="caja">
+           
+            <h2>Iniciar Sesión</h2>
+            <form action="/login" method="POST">
+                <input type="text" name="username" placeholder="Nombre de usuario">
+                <input type="password" name="password" placeholder="Contraseña">
+                <button id="toQuiz">Entrar</button>
+                
+                
+            </form>
+            <div class="register-link">
+                <p><a href="quiz.html">Juega sin registrarte</a></p>
+                   
+                <p>¿No tienes cuenta? <a href="./signup.html">Regístrate aquí</a></p>
+            
+            </div>
+           
+            </section>
+            
+                
+    
+            
+           
+
+    </main>
+    <footer>
+       
+        <p>© Music Quiz 2024</p>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+
+    
+
+    </footer>
+</body>
+</html>
