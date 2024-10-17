@@ -271,9 +271,14 @@ document.addEventListener("DOMContentLoaded", function() {
 let preguntas = []; //array pregutas obtenidas api
 let preguntaActual = 0; //índice de preguntas
 let puntuacion = 0; //se guarda la puntutación de las preguntas (pocentaje)
-let games = JSON.parse(localStorage.getItem("Partidas"));
-games=[];//se guardan las puntuaciones y fechas de partida.
-localStorage.setItem("Partidas", JSON.stringify(games))
+JSON.parse(localStorage.getItem("Partidas"));
+
+if ( localStorage.getItem("Partidas") === null){
+    let games = []
+    localStorage.setItem("Partidas", JSON.stringify(games))
+}
+
+
 
 async function obtenerPreguntas() {
     try {
