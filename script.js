@@ -272,12 +272,8 @@ let preguntas = []; //array pregutas obtenidas api
 let preguntaActual = 0; //índice de preguntas
 let puntuacion = 0; //se guarda la puntutación de las preguntas (pocentaje)
 let games = JSON.parse(localStorage.getItem("Partidas"));
-if (games.length == 0){
 games=[];//se guardan las puntuaciones y fechas de partida.
 localStorage.setItem("Partidas", JSON.stringify(games))
-} else {
-     games = JSON.parse(localStorage.getItem("Partidas"))
-}
 
 async function obtenerPreguntas() {
     try {
