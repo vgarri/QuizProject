@@ -281,7 +281,7 @@ localStorage.setItem("Partidas", JSON.stringify(games))
 
 async function obtenerPreguntas() {
     try {
-        let respuesta = await fetch('http://opentdb.com/api.php?amount=10&category=12&difficulty=easy&type=multiple');
+        let respuesta = await fetch('https://opentdb.com/api.php?amount=10&category=12&difficulty=easy&type=multiple');
         if (!respuesta.ok) {
             throw new Error('Error al obtener las preguntas');
         }
