@@ -272,16 +272,16 @@ let preguntas = []; //array pregutas obtenidas api
 let preguntaActual = 0; //índice de preguntas
 let puntuacion = 0; //se guarda la puntutación de las preguntas (pocentaje)
 let games = JSON.parse(localStorage.getItem("Partidas"));
-// if (games.length === 0){
-// games=[];//se guardan las puntuaciones y fechas de partida.
+if (games.length === 0){
+games=[];//se guardan las puntuaciones y fechas de partida.
 localStorage.setItem("Partidas", JSON.stringify(games))
-// } else {
-//     games = JSON.parse(localStorage.getItem("Partidas"))
-// }
+} else {
+    games = JSON.parse(localStorage.getItem("Partidas"))
+}
 
 async function obtenerPreguntas() {
     try {
-        let respuesta = await fetch('https://opentdb.com/api.php?amount=10&category=12&difficulty=easy&type=multiple');
+        let respuesta = await fetch('http://opentdb.com/api.php?amount=10&category=12&difficulty=easy&type=multiple');
         if (!respuesta.ok) {
             throw new Error('Error al obtener las preguntas');
         }
